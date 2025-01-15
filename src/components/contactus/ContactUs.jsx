@@ -91,7 +91,7 @@ const ContactUs = () => {
                     }
                 </form>
                 <div className='flex h-full'>
-                    <img src="../src/assets/it_services.jpg" className='' alt="contact-us" srcset="" />
+                    <img src="../src/assets/it_services.jpg" alt="contact-us" />
                 </div>
             </div>
         </div>
