@@ -8,13 +8,12 @@ const Home = ({ homeState, services }) => {
 
   return (
     <div className='flex flex-col'>
-      <div className={`flex flex-col h-screen md:grid md:grid-cols-1 md:gap-5 md:items-end py-14 px-5 bg-fixed bg-cover bg-center`} style={{ backgroundImage: `url(${API_BASE_URL}${homeState[0]?.image})` }} >
+      <div className={`flex justify-center items-center h-screen md:items-end md:py-14 px-5 bg-fixed bg-cover bg-center`} style={{ backgroundImage: `url(${API_BASE_URL}${homeState[0]?.image})` }} >
         <div className="absolute top-0 left-0 w-full h-full bg-zinc-800/60 "></div>
-        <div className='flex w-full z-10 pl-10'>
-          <div className=' p-2 text-start pr-20 mr-20'>
-            <p className='text-[55px] md:text-[45px] font-semibold' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(homeState[0]?.title) }}></p>
-            <p className='text-[25px] font-semibold' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(homeState[0]?.text) }} ></p>
-            <p className='text-[55px] md:text-[18px] ' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(homeState[0]?.textTwo) }}></p>
+        <div className='flex w-full z-10 md:pl-10'>
+          <div className=' p-2 text-start md:pr-20 md:mr-20'>
+            <p className='text-[35px] md:text-[45px] font-semibold' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(homeState[0]?.title) }}></p>
+            <p className='text-[20px] md:text-[22px] font-semibold' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(homeState[0]?.text) }} ></p>
             <BtnMotion to={'/servicios'}>
               Ver Servicios
               <FaArrowRight />
@@ -22,8 +21,8 @@ const Home = ({ homeState, services }) => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col h-screen bg-fixed justify-center items-center px-5'>
-        <section className='flex flex-col md:flex-row h-[300px] w-full'>
+      <div className='flex flex-col h-full md:h-screen bg-fixed md:justify-center items-center p-5'>
+        <section className='flex flex-col md:flex-row w-full'>
           <div className={`w-full`}>
             <img src={API_BASE_URL + homeState[1]?.image} alt="" />
           </div>
@@ -41,7 +40,7 @@ const Home = ({ homeState, services }) => {
           </div>
         </section>
       </div>
-      <div className='flex flex-col h-screen bg-[#f5f5f5] justify-center items-center px-5'>
+      <div className='flex flex-col h-full md:h-screen bg-[#f5f5f5] md:justify-center items-center p-5'>
         <section className='flex flex-col md:flex-row w-full'>
           <div className={`w-full flex flex-col md:px-10 transition-all`}>
             <div>
@@ -69,7 +68,7 @@ const Home = ({ homeState, services }) => {
           </div>
         </section>
       </div>
-      <div className='flex flex-col h-screen bg-p-secundary text-white justify-center items-center px-5'>
+      <div className='flex flex-col h-full md:h-screen bg-p-secundary text-white md:justify-center items-center p-5'>
         <section className='flex flex-col md:flex-row w-full'>
           <div className={`w-full`}>
             <img src={API_BASE_URL + homeState[3]?.image} alt="" />

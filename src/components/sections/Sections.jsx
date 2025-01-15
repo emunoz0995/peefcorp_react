@@ -9,7 +9,7 @@ const Sections = ({ state }) => {
         if (state.position === 1) {
             return (
 
-                <div key={state.id} className='flex flex-col h-screen bg-fixed justify-center items-center px-5'>
+                <div key={state.id} className='flex flex-col h-full md:h-screen bg-fixed md:justify-center items-center p-5'>
                     <state className='flex flex-col md:flex-row w-full'>
                         <div className={`w-full`}>
                             <img src={API_BASE_URL + state.image} alt="" />
@@ -23,7 +23,7 @@ const Sections = ({ state }) => {
                                 <a
                                     target="_blank"
                                     href='https://api.whatsapp.com/send/?phone=593995888870&text=Hola+me+interesa+contactarme+contigo&type=phone_number&app_absent=0'
-                                    className='flex justify-center items-center gap-2 active:scale-95 transition-all hover:scale-110 hover:bg-green-500 bg-green-600 text-white p-2 rounded-sm font-bold shadow-lg shadow-base-content/30'>
+                                    className='flex my-5 justify-center items-center gap-2 active:scale-95 transition-all hover:scale-110 hover:bg-green-500 bg-green-600 text-white p-2 rounded-sm font-bold shadow-lg shadow-base-content/30'>
                                     Contactanos
                                     <FaArrowRight />
                                 </a>
@@ -34,7 +34,7 @@ const Sections = ({ state }) => {
             )
         } else if (state.position === 2) {
             return (
-                <div className='flex flex-col h-screen bg-[#f5f5f5] justify-center items-center px-5'>
+                <div className='flex flex-col h-full md:h-screen bg-[#f5f5f5] md:justify-center items-center p-5'>
                     <state className='flex flex-col md:flex-row w-full'>
                         <div className={`w-full flex flex-col md:p-10 transition-all justify-center items-center`}>
                             <div className='my-5'>
@@ -45,7 +45,7 @@ const Sections = ({ state }) => {
                                 <a
                                     target="_blank"
                                     href='https://api.whatsapp.com/send/?phone=593995888870&text=Hola+me+interesa+contactarme+contigo&type=phone_number&app_absent=0'
-                                    className='flex justify-center items-center gap-2 active:scale-95 transition-all hover:scale-110 hover:bg-green-500 bg-green-600 text-white p-2 rounded-sm font-bold shadow-lg shadow-base-content/30'>
+                                    className='flex my-5 justify-center items-center gap-2 active:scale-95 transition-all hover:scale-110 hover:bg-green-500 bg-green-600 text-white p-2 rounded-sm font-bold shadow-lg shadow-base-content/30'>
                                     Contactanos
                                     <FaArrowRight />
                                 </a>

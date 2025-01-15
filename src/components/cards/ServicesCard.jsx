@@ -13,7 +13,7 @@ const ServicesCard = ({ destinationState }) => {
         <div
             //onClick={() => handleNavigate(destinationState.name.toLowerCase())}
             className='h-[400px] flex flex-col justify-start rounded-sm  m-3'>
-            <div className="h-[50%]  ">
+            <div className="md:h-[50%]  ">
                 <img className='aspect-auto' src={API_BASE_URL + destinationState.image} alt={destinationState.name} />
             </div>
             <div className=" h-[50%] bg-[#1311118f] backdrop-blur-lg rounded-none ">

@@ -26,9 +26,9 @@ const ContactUs = () => {
     }, [leadState, dispatch, reset]);
 
     return (
-        <div name='contact_us' className={`flex justify-center h-full p-5 py-20`}>
-            <div className=' grid grid-cols-1 md:grid-cols-2 w-[80%] h-full '>
-                <form onSubmit={handleSubmit(onSubmit)} className='w-full h-full p-5 flex flex-col justify-center'>
+        <div name='contact_us' className={`flex justify-center h-full p-5 md:py-20`}>
+            <div className=' grid grid-cols-1 md:grid-cols-2 md:w-[80%] h-full '>
+                <form onSubmit={handleSubmit(onSubmit)} className='w-full h-full md:p-5 flex flex-col justify-center'>
                     <div className='flex flex-col gap-2 text-start w-full items-center justify-center p-2 '>
                         <h1 className='text-[35px] text-black'>¿Cómo podemos ayudarte?</h1>
                         <p>Cuéntenos su problema y nos pondremos en contacto con usted lo antes posible.</p>
@@ -90,7 +90,7 @@ const ContactUs = () => {
                                 </div>
                     }
                 </form>
-                <div className='flex h-full'>
+                <div className='hidden md:flex h-full'>
                     <img src="../src/assets/it_services.jpg" alt="contact-us" />
                 </div>
             </div>
