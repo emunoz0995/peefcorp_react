@@ -1,0 +1,58 @@
+/* Blooming Heart */
+@font-face {
+  font-family: 'BloomingHeart';
+  src: url('./assets/fonts/Blooming-Heart.otf');
+}
+
+@font-face {
+  font-family: 'Hemihead';
+  src: url('./assets/fonts/HEMIHEAD.TTF');
+}
+
+#root {
+  text-align: center;
+  background-color: white;
+}
+
+.bg-fixed {
+  background-image: url('../src/assets/bg.svg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* dosts slider */
+
+.custom-dot {
+  width: 10px;
+  height: 10px;
+  margin-top: 25px;
+  border-radius: 50%;
+  background: #a1e4df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots li.slick-active .custom-dot {
+  background: #44b3ab;
+}
+
+.slick-dots li {
+  width: 8px;
+  ;
+}
+
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #44b3ab;
+  font-size: 34px;
+}
