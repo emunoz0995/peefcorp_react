@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { FaCheck } from 'react-icons/fa';
-import { PRIVACY_POLITICS_URL } from '../../store/constans';
 import { createLeadThunk, initialStateLead } from '../../store/slices/pages/leads.slice';
 import { useDispatch, useSelector } from 'react-redux';
 import BtnMotion from '../buttons/BtnMotion';
@@ -57,7 +56,7 @@ const ContactUs = () => {
                             <div className='flex flex-col'>
                                 <div className='flex gap-5'>
                                     <input type="checkbox" className=' cursor-pointer text-[15px] bg-transparent border-b-2  focus:outline-none' {...register("readPolitics", { required: true })} />
-                                    <a className="hover:text-orange-600" href={PRIVACY_POLITICS_URL} target="_blank" rel="noopener noreferrer">
+                                    <a className="hover:text-orange-600" href='#' target="_blank" rel="noopener noreferrer">
                                         <label className='text-[13px] '>Your privacy is of utmost importance to us. We respect your data, and all the information you share will be handled in compliance with our privacy policy.</label>
                                     </a>
                                 </div>

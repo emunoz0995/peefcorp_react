@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { FaCheck, FaQuestionCircle, FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
-import { PRIVACY_POLITICS_URL } from '../../store/constans';
 import { createLeadThunk, initialStateLead } from '../../store/slices/pages/leads.slice';
 
 const HelpsComponent = () => {

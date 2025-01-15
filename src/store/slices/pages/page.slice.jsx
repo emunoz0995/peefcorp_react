@@ -81,6 +81,7 @@ export const getHomeScreenAdminThunk = () => dispatch => {
             }
         })
         .catch(res => {
+            console.log(res)
             if (res.response.status === 498) {
                 logOut();
             } else {
