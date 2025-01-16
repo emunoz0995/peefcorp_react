@@ -1,11 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll';
 import { FaFacebookF, FaInstagram, } from 'react-icons/fa';
-import distintivoQ from '../../../assets/pruebas/distintivoQ.png'
-import smartPlanet from '../../../assets/pruebas/SmartPlanetBlanco.png'
-import travelMart from '../../../assets/pruebas/TMLA.png'
-import ecuador from '../../../assets/pruebas/ecuador_blanco.png'
-import foot from '../../../assets/foot.svg';
 import bg from '../../../assets/img4.png'
 
 const Footer = () => {

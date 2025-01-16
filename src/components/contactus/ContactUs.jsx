@@ -4,7 +4,7 @@ import { FaCheck } from 'react-icons/fa';
 import { createLeadThunk, initialStateLead } from '../../store/slices/pages/leads.slice';
 import { useDispatch, useSelector } from 'react-redux';
 import BtnMotion from '../buttons/BtnMotion';
-
+import contact from '../../assets/it_services.png'
 const ContactUs = () => {
 
     const dispatch = useDispatch();
@@ -91,7 +91,7 @@ const ContactUs = () => {
                     }
                 </form>
                 <div className='hidden md:flex h-full'>
-                    <img src="../src/assets/it_services.jpg" alt="contact-us" />
+                    <img src={contact} alt="contact-us" />
                 </div>
             </div>
         </div>
